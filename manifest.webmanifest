@@ -1,8 +1,8 @@
 {
-  "name": "Mr Coxall's App",
-  "short_name": "Mr Coxall's App",
-  "description": "Github Page for Mr Coxall's App",
-  "scope": "/ICS2O-PWA-Test/",
+  "name": "Enre Guzel App",
+  "short_name": "Emre Guzel App",
+  "description": "Github Page for Emre Guzel App",
+  "scope": "/ICD2O-Unit-6-01-Emre-Guzel-2/",
   "start_url": "/ICD2O-Unit-6-01-Emre-Guzel-2/",
   "permissions": [
     "unlimitedStorage",
