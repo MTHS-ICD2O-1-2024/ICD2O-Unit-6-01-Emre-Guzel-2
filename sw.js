@@ -8,6 +8,7 @@ var URLS = [
   `${GHPATH}/android-chrome-512x512.png`,
   `${GHPATH}/js/script.js`,
   `${GHPATH}/images/numbers.jpg`,
+  "https://code.getmdl.io/1.3.0/material.blue_grey-light_green.min.css"
 ]
 
 var CACHE_NAME = APP_PREFIX + VERSION
