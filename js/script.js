@@ -6,6 +6,15 @@
 
 "use strict"
 
+/**
+ * Check servie worker.
+ */
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/ICD2O-Unit-6-01-Emre-Guzel/sw.js", {
+    scope: "ICD2O-Unit-6-01-Emre-Guzel/",
+  })
+}
+
 // Setting the randomNumberGenerator as function 
 function randomNumberGenerator() {
   // Setting the variables
