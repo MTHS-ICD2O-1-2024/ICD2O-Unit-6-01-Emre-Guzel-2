@@ -10,8 +10,8 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICD2O-Unit-6-01-Emre-Guzel/sw.js", {
-    scope: "ICD2O-Unit-6-01-Emre-Guzel/",
+  navigator.serviceWorker.register("/ICD2O-Unit-6-01-Emre-Guzel-2/sw.js", {
+    scope: "/ICD2O-Unit-6-01-Emre-Guzel-2/",
   })
 }
 
