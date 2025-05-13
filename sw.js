@@ -7,6 +7,7 @@ var URLS = [
   `${GHPATH}/css/styles.css`,
   `${GHPATH}/android-chrome-512x512.png`,
   `${GHPATH}/js/script.js`,
+  `${GHPATH}/images/numbers.jpg`,
 ]
 
 var CACHE_NAME = APP_PREFIX + VERSION
