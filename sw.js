@@ -1,4 +1,4 @@
-var GHPATH = "/ICD2O-Unit-6-01-Emre-Guzel-2"
+var GHPATH = "/github-page-pwa"
 var APP_PREFIX = "gppwa_"
 var VERSION = "version_001"
 var URLS = [
@@ -10,7 +10,6 @@ var URLS = [
 ]
 
 var CACHE_NAME = APP_PREFIX + VERSION
-
 self.addEventListener("fetch", function (e) {
   console.log("Fetch request : " + e.request.url)
   e.respondWith(
@@ -39,12 +38,12 @@ self.addEventListener("activate", function (e) {
   e.waitUntil(
     caches.keys().then(function (keyList) {
       var cacheWhitelist = keyList.filter(function (key) {
-        return key.indexOf(APP_PREFIX) === 0
+        return key.indexOf(APP_PREFIX)
       })
       cacheWhitelist.push(CACHE_NAME)
       return Promise.all(
         keyList.map(function (key, i) {
-          if (!cacheWhitelist.includes(key)) {
+          if (cacheWhitelist.indexOf(key) === -1) {
             console.log("Deleting cache : " + keyList[i])
             return caches.delete(keyList[i])
           }
